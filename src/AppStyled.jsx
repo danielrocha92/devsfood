@@ -7,6 +7,8 @@ background-color: #FF0000;
 `;
 export const Menu = styled.div`
 display: flex;
+justify-content: center;
+align-items: center;
 background-color: #136713;
 width: 80px; 
 flex-direction: column;
@@ -14,6 +16,7 @@ flex-direction: column;
 `;
 export const PageBody = styled.div`
 display: flex;
-background-color: #0000FF;
+background-color: #00980D;
+background-image: url('/assets/bg.png');
 flex: 1;
 `;
