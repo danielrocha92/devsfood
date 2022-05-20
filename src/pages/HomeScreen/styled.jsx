@@ -26,4 +26,12 @@ export const ProductList = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
+
+
+`;export const ProductPaginationArea = styled.div`
+     
+`;
+
+export const ProductPaginationItem = styled.div`
+
 `;
