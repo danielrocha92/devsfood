@@ -29,9 +29,20 @@ export const ProductList = styled.div`
 
 
 `;export const ProductPaginationArea = styled.div`
-     
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 20px;
+     cursor: pointer;
 `;
 
-export const ProductPaginationItem = styled.div`
 
+export const ProductPaginationItem = styled.div`
+    background-color: ${props=>props.active == props.current ? '#CCC' : '#FFF'};
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 3 px 6 px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    margin-right: 10px;
+    transition: .3s;
+    
 `;
