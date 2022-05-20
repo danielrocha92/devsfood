@@ -17,6 +17,8 @@ export default () => {
     const [headerSearch, setHeaderSearch] = useState('');
     const [categories, setCategories] = useState([]);
 
+    const [activeCategory, setSctiveCategory] = useState(0);
+
     useEffect(()=>{
         const getCategories = async () => {
             const cat = await api.getCategories();
@@ -38,15 +40,17 @@ export default () => {
                     <CategoryList>
                         <CategoryItem
                         data={{
-                            id:'', 
+                            id:0, 
                             title:'Todas as categorias',
                             image: '/assets/food-and-restaurant.png'
                         }}
+                        activeCategory={activeCategory}
                              />
                             {categories.map((item, index)=>(
                                 <CategoryItem 
                                     key={index} 
                                     data={item} 
+                                    activeCategory={activeCategory}
                                 />
                             ))}
                     </CategoryList>    
