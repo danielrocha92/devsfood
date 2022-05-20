@@ -17,7 +17,7 @@ export default () => {
     const [headerSearch, setHeaderSearch] = useState('');
     const [categories, setCategories] = useState([]);
 
-    const [activeCategory, setSctiveCategory] = useState(0);
+    const [activeCategory, setActiveCategory] = useState(0);
 
     useEffect(()=>{
         const getCategories = async () => {
@@ -28,6 +28,10 @@ export default () => {
         };
         getCategories();
     }, []);
+
+    useEffect(()=>{
+        
+    }, [activeCategory]);
         
 
     return (
@@ -45,12 +49,14 @@ export default () => {
                             image: '/assets/food-and-restaurant.png'
                         }}
                         activeCategory={activeCategory}
+                        setActiveCategory={setActiveCategory}
                              />
                             {categories.map((item, index)=>(
                                 <CategoryItem 
                                     key={index} 
                                     data={item} 
                                     activeCategory={activeCategory}
+                                    setActiveCategory={setActiveCategory}
                                 />
                             ))}
                     </CategoryList>    
