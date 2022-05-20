@@ -46,3 +46,7 @@ export const ProductPaginationItem = styled.div`
     transition: .3s;
     
 `;
+
+export const activeSearch = styled.div`
+
+`;
