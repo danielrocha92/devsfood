@@ -28,7 +28,8 @@ export default () => {
     const [products, setProducts] = useState([]);
     const [totalPages, setTotalPages] = useState(0);
 
-    const [modalStatus, setModalStatus] = useState(true);
+    const [modalStatus, setModalStatus] = useState(false);
+    const [modalData, setModalData] = useState({});
 
     const [activeCategory, setActiveCategory] = useState(0);
     const [activePage, setActivePage] = useState(1);
@@ -65,6 +66,11 @@ export default () => {
         setProducts([]);
         getProducts();
     }, [activeCategory, activePage, activeSearch]);
+
+    const handleProductClick = (data) => {
+        setModalData(data);
+        setModalStatus(true);
+    }
         
 
     return (
@@ -102,6 +108,7 @@ export default () => {
                             <ProductItem
                                 key={index}
                                 data={item} 
+                                onClick={handleProductClick}
                             />
                         ))}
                     </ProductList>
@@ -127,7 +134,7 @@ export default () => {
                 status={modalStatus} 
                 setStatus={setModalStatus}
             >
-                <ModalProduct />
+                <ModalProduct data={modalData} />
             </Modal>
         </Container>
     );
