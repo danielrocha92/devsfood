@@ -17,7 +17,7 @@ export const Container = styled.div`
 export const ModalBody = styled.div`
     background-color: #FFF;
     border-radius: 20px;
-    max-width: 100vh;
+    max-width: 100vw;
     max-height: 95vh;
     overflow: auto;
     box-shadow: 0px 0px 50px #000;
