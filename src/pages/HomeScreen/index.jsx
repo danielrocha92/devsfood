@@ -16,6 +16,7 @@ import api from '../../api';
 import Header from '../../components/Header';
 import CategoryItem from '../../components/CategoryItem';
 import ProductItem from '../../components/ProductItem';
+import Modal from '../../components/Modal';
 
 let searchTimer = null;
 
@@ -25,6 +26,8 @@ export default () => {
     const [categories, setCategories] = useState([]);
     const [products, setProducts] = useState([]);
     const [totalPages, setTotalPages] = useState(0);
+
+    const [modalStatus, setModalStatus] = useState(false);
 
     const [activeCategory, setActiveCategory] = useState(0);
     const [activePage, setActivePage] = useState(1);
@@ -119,6 +122,9 @@ export default () => {
                     ))}
                 </ProductPaginationArea>
             }
+            <Modal status={modalStatus}>
+                Conteúdo do Modal
+            </Modal>
         </Container>
     );
 }
