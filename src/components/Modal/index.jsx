@@ -1,9 +1,20 @@
 import React from "react";
 import { Container, ModalBody } from './styled';
 
-export default ({ status, children }) => {
+export default ({ status, setStatus, children }) => {
+    const handleModalClick = (e) => {
+        if(e.target.classList.constains('modalBig')){
+            setStatus(false);
+        }
+    }
+
+
     return (
-        <Container status={status}>
+        <Container 
+            className="modalBig"
+            status={status} 
+            onClick={handleModalClick}
+        >
              <ModalBody>
                  {children}
              </ModalBody>

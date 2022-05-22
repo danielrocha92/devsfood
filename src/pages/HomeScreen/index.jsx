@@ -122,7 +122,7 @@ export default () => {
                     ))}
                 </ProductPaginationArea>
             }
-            <Modal status={modalStatus}>
+            <Modal status={modalStatus} setModalStatus={setModalStatus}>
                 Conteúdo do Modal
             </Modal>
         </Container>
