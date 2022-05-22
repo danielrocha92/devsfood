@@ -3,7 +3,7 @@ import { Container, ModalBody } from './styled';
 
 export default ({ status, setStatus, children }) => {
     const handleModalClick = (e) => {
-        if(e.target.classList.constains('modalBig')){
+        if(e.target.classList.contains('modalBig')) {
             setStatus(false);
         }
     }
