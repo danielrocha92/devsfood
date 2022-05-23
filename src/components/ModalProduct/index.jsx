@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useDispatch } from 'react-redux';
+
 import { 
     Container, 
     ProductArea, 
@@ -18,6 +20,8 @@ import {
 } from "./styled";
 
 export default ({ data, setStatus })=> {
+
+    const dispatch = useDispatch();
     const [qt, setQt] = useState(1);
 
     useEffect(()=>{
@@ -38,9 +42,10 @@ export default ({ data, setStatus })=> {
     }
 
     const handleAddToCart = () => {
-        // juntar as informações 
-        //mandar isso pro reducer
-
+        dispatch({
+            type: 'ADD_PRODUCT',
+            payload:{data, qt}
+        });
         setStatus(false);
     }
 
