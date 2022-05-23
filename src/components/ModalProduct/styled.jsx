@@ -17,6 +17,7 @@ export const ProductButtons = styled.div`
 
 export const ProductPhoto = styled.img`
     width: 310px;
+    border-radius: 10px;
 `;
 
 export const ProductInfoArea = styled.div`
@@ -26,13 +27,20 @@ export const ProductInfoArea = styled.div`
     justify-content: space-between;
 `;
 
-export const ProductDetails = styled.div`
-    height: 50px;
-    background-color: red;
+export const ProductDetails = styled.div` 
 `;
 
 export const ProductQuantityArea = styled.div`
     height: 50px;
     background-color: yellow;
+`;
+
+export const ProductName = styled.div`
+    font-size: 30px;
+    font-weight: bold;
+`;
+
+export const ProductIngredients = styled.div`
+    font-size: 14px;
 `;
 

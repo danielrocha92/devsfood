@@ -6,7 +6,9 @@ import {
     ProductPhoto, 
     ProductInfoArea, 
     ProductDetails, 
-    ProductQuantityArea 
+    ProductQuantityArea,
+    ProductName,
+    ProductIngredients 
         
 } from "./styled";
 
@@ -17,7 +19,8 @@ export default ({ data })=> {
                 <ProductPhoto src={data.image} />
                 <ProductInfoArea>
                     <ProductDetails>
-                        {data.name}
+                        <ProductName>{data.name}</ProductName>
+                        <ProductIngredients>{data.ingredients}</ProductIngredients>
                     </ProductDetails>
                     <ProductQuantityArea>
                         ,,,
