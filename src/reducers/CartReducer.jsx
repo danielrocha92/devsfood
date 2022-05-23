@@ -10,7 +10,7 @@ export default (state = initialState, action) => {
         case 'ADD_PRODUCT':
             let products = [...state.products];
             let id = action.payload.data.id;
-            
+
             let index = products.findIndex(item => item.id === id);
             if(index > -1) {
                 products[index].qt += action.payload.qt;
@@ -20,7 +20,7 @@ export default (state = initialState, action) => {
                     qt: action.payload.qt
                 });
             }
-
+            
             console.log(products);
 
             return {...state, products};

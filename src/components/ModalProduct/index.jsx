@@ -61,7 +61,7 @@ export default ({ data, setStatus })=> {
                     <ProductQuantityArea>
                         <ProductQuantity>
                             <ProductQtImage onClick={handleMinusQt} src="/assets/minus.png" />
-                            <ProductQtText>{qt}</ProductQtText>
+                               <ProductQtText>{qt}</ProductQtText>
                             <ProductQtImage onClick={handlePlusQt} src="/assets/plus.png" />
                         </ProductQuantity>
                     </ProductQuantityArea>
