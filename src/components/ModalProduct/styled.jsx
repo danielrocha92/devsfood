@@ -15,11 +15,7 @@ export const ProductButtons = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-`;
-
-export const ProductPhoto = styled.img`
-    width: 310px;
-    border-radius: 10px;
+    cursor: pointer;
 `;
 
 export const ProductInfoArea = styled.div`
@@ -68,12 +64,6 @@ export const ProductQuantity = styled.div`
     background-color: #073c07;
     border-radius: 5px;
 `;
-export const ProductQtImage = styled.img`
-    width: 24px;
-    height: auto;
-    margin-left: 10px;
-    margin-right: 10px;
-`;
 export const ProductQtText = styled.div`
     font-size: 24px;
     font-weight: bold;
@@ -83,4 +73,19 @@ export const ProductQtText = styled.div`
 export const ProductPrice = styled.div`
     font-size: 30px;
     font-weight: bold;
+`;
+
+
+export const ProductQtImage = styled.img`
+    width: 24px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+`;
+
+
+export const ProductPhoto = styled.img`
+    width: 310px;
+    border-radius: 10px;
 `;
