@@ -20,7 +20,7 @@ export default (state = initialState, action) => {
                     qt: action.payload.qt
                 });
             }
-            
+
             console.log(products);
 
             return {...state, products};

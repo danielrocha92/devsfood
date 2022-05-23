@@ -60,9 +60,15 @@ export default ({ data, setStatus })=> {
                     </ProductDetails>
                     <ProductQuantityArea>
                         <ProductQuantity>
-                            <ProductQtImage onClick={handleMinusQt} src="/assets/minus.png" />
+                            <ProductQtImage 
+                                onClick={handleMinusQt} 
+                                src="/assets/minus.png" 
+                            />
                                <ProductQtText>{qt}</ProductQtText>
-                            <ProductQtImage onClick={handlePlusQt} src="/assets/plus.png" />
+                            <ProductQtImage 
+                                onClick={handlePlusQt} 
+                                src="/assets/plus.png" 
+                            />
                         </ProductQuantity>
                     </ProductQuantityArea>
                     <ProductPrice> 
@@ -72,10 +78,14 @@ export default ({ data, setStatus })=> {
             </ProductArea>
             <ProductButtons>
                 <ProductButton 
-                small={true}
-                onClick={handleCancelButton}
-                >Cancelar</ProductButton>
-                <ProductButton onClick={handleAddToCart}>Adicionar ao Carrinho</ProductButton>
+                    small={true}
+                    onClick={handleCancelButton}
+                >Cancelar
+                </ProductButton>
+                <ProductButton 
+                    onClick={handleAddToCart}
+                >Adicionar ao Carrinho
+                </ProductButton>
             </ProductButtons>
         </Container>
     );
