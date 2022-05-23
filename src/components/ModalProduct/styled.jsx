@@ -11,8 +11,9 @@ export const ProductArea = styled.div`
 `;
 
 export const ProductButtons = styled.div`
-    height: 50px;
-    background-color: green;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
 `;
 
 export const ProductPhoto = styled.img`
@@ -25,6 +26,7 @@ export const ProductInfoArea = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 10px;
 `;
 
 export const ProductDetails = styled.div` 
@@ -32,7 +34,7 @@ export const ProductDetails = styled.div`
 
 export const ProductQuantityArea = styled.div`
     height: 50px;
-    background-color: yellow;
+    background-color: #0000ff;
 `;
 
 export const ProductName = styled.div`
@@ -42,5 +44,18 @@ export const ProductName = styled.div`
 
 export const ProductIngredients = styled.div`
     font-size: 14px;
+`;
+
+export const ProductButton = styled.div`
+    border: 0;
+    background-color: #07c307;
+    box-shadow: 4px 5px 0px #999;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 `;
 

@@ -8,7 +8,8 @@ import {
     ProductDetails, 
     ProductQuantityArea,
     ProductName,
-    ProductIngredients 
+    ProductIngredients,
+    ProductButton
         
 } from "./styled";
 
@@ -28,7 +29,8 @@ export default ({ data })=> {
                 </ProductInfoArea>
             </ProductArea>
             <ProductButtons>
-
+                <ProductButton>Cancelar</ProductButton>
+                <ProductButton>Adicionar ao Carrinho</ProductButton>
             </ProductButtons>
         </Container>
     );
