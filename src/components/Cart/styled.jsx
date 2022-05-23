@@ -29,4 +29,6 @@ export const CartText = styled.div`
     font-size: 17px;
 `;
 
-export const CartBody = styled.div``;
+export const CartBody = styled.div`
+    display: ${props=>props.show ? 'block' : 'none'};
+`;
