@@ -29,7 +29,7 @@ export default () => {
             <CartHeader onClick={handleCartClick}>
                 <CartIcon src="/assets/cart.png" />
                 
-                <CartText>Meu Carrinho ({products.length})</CartText>
+                <CartText>Meu Carrinho </CartText>
 
                 {show &&
                     <CartIcon src="/assets/down.png" />
